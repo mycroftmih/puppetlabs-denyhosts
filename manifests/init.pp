@@ -84,12 +84,12 @@ class denyhosts (
       require   => Package['denyhosts'],
   }
 
-  file {
-    '/etc/hosts.allow':
-      content => template('denyhosts/hosts.allow.erb'),
-      owner   => root,
-      group   => root,
-      mode    => '0644',
-  }
+  #file {
+  #  '/etc/hosts.allow':
+  #    content => template('denyhosts/hosts.allow.erb'),
+  #    owner   => root,
+  #    group   => root,
+  #    mode    => '0644',
+  #}
 
 }
